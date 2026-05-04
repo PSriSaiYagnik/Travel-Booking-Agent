@@ -22,18 +22,66 @@ TravelMind AI is an intelligent, multi-agent conversational travel booking syste
 ## Project Structure 📁
 
 ```text
+Travel-Booking-Agent
+├── README.md
+├── requirements.txt
+├── streamlit_app.py
 ├── app/
-│   ├── a2a/            # Agent-to-Agent JSON-RPC communication wrapper
-│   ├── agents/         # LangGraph agents (Orchestrator, Flight, Hotel)
-│   ├── common/         # Shared utilities and configurations
-│   ├── core/           # Core logic and base structures
-│   ├── db/             # SQLite database and related schemas
-│   ├── guardrails/     # Prompt guardrails and validation rules
-│   └── services/       # MCP server, external API integrations, and local services
-├── interface/          # Any additional UI or interface assets
-├── tests/              # Unit and integration test suite
-├── requirements.txt    # Project Python dependencies
-└── streamlit_app.py    # Main Streamlit application entry point
+│   ├── a2a/
+│   │   ├── client/
+│   │   │   └── wrapper.py
+│   │   ├── server/
+│   │   │   ├── executor.py
+│   │   │   └── router.py
+│   │   └── schemas.py
+│   ├── agents/
+│   │   ├── base/
+│   │   │   └── state.py
+│   │   ├── flight/
+│   │   │   ├── agent.json
+│   │   │   ├── constants.py
+│   │   │   ├── graph.py
+│   │   │   ├── main.py
+│   │   │   ├── nodes.py
+│   │   │   └── state.py
+│   │   ├── hotel/
+│   │   │   ├── agent.json
+│   │   │   ├── constants.py
+│   │   │   ├── graph.py
+│   │   │   ├── main.py
+│   │   │   ├── nodes.py
+│   │   │   └── state.py
+│   │   └── orchestrator/
+│   │       ├── constants.py
+│   │       ├── graph.py
+│   │       ├── main.py
+│   │       ├── nodes.py
+│   │       ├── prompts.py
+│   │       ├── registry.py
+│   │       └── state.py
+│   ├── common/
+│   │   └── registry.py
+│   ├── core/
+│   │   ├── checkpointer.py
+│   │   ├── config.py
+│   │   └── llm.py
+│   ├── db/
+│   │   └── schema.sql
+│   ├── guardrails/
+│   │   ├── input_validator.py
+│   │   ├── prompts.py
+│   │   └── types.py
+│   └── services/
+│       ├── flight_service.py
+│       ├── hotel_service.py
+│       ├── mcp_server.py
+│       └── mock_data.json
+├── interface/
+│   └── app.py
+└── tests/
+    ├── test_flight_agent.py
+    ├── test_hotel_agent.py
+    └── test_orchestrator.py
 ```
 
 ## Getting Started 💻
