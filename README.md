@@ -1,6 +1,6 @@
 # TravelMind AI - Multi-Agent Travel Booking System ✈️🌍
 
-TravelMind AI is an intelligent, multi-agent conversational travel booking system designed to help users plan and book flights and hotels seamlessly. It leverages an Agent-to-Agent (A2A) communication architecture to distribute tasks among specialized sub-agents. 
+TravelMind AI is an intelligent, multi-agent conversational travel booking system designed to help users plan and book flights and hotels seamlessly. It leverages an Agent-to-Agent (A2A) communication architecture to distribute tasks among specialized sub-agents(flight and hotel). 
 
 ## Features 🚀
 
@@ -127,7 +127,7 @@ Travel-Booking-Agent
 2. **Start the Frontend UI (Streamlit):**
    In a separate terminal:
    ```bash
-   streamlit run streamlit_app.py
+   streamlit run streamlit_app.py 
    ```
 
 Open your browser to `http://localhost:8501` to start chatting with TravelMind AI!!
