@@ -1,0 +1,14 @@
+{
+  "id": "hotel-agent",
+  "name": "Hotel Booking Agent",
+  "description": "Searches for available hotels in a specified city or neighborhood.",
+  "endpoint": "/rpc",
+  "supported_tasks": [
+    "hotel_search"
+  ],
+  "required_params": [
+    "destination",
+    "check_in_date",
+    "check_out_date"
+  ]
+}

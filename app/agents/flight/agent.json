@@ -1,0 +1,14 @@
+{
+  "id": "flight-agent",
+  "name": "Flight Booking Agent",
+  "description": "Searches for flights using AeroDataBox API. Supports one-way, round-trip, and multi-city itineraries.",
+  "endpoint": "/rpc",
+  "supported_tasks": [
+    "flight_search"
+  ],
+  "required_params": [
+    "origin",
+    "destination",
+    "departure_date"
+  ]
+}
