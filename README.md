@@ -130,5 +130,4 @@ Travel-Booking-Agent
    streamlit run streamlit_app.py
    ```
 
-Open your browser to `http://localhost:8501` to start chatting with TravelMind AI!
-developers : Sri Sai Yagnik P & Bhoomika M S
+Open your browser to `http://localhost:8501` to start chatting with TravelMind AI!!
